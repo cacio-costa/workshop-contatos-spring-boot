@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="ISO-8859-1">
+	<title>Caelum - Contatos</title>
+	<link rel="stylesheet" href="static/bootstrap.css">
+</head>
+<body>
+
+	<h1>Lista de contatos</h1>
+	<hr>
+	
+	<table class="table">
+		<thead>
+			<tr>
+				<th>ID</th>
+				<th>NOME</th>
+				<th>EMAIL</th>
+				<th>TELEFONE</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr th:each="contato : ${contatos}">
+				<td th:text="${contato.id}">999</td>
+				<td th:text="${contato.nome}">Fulano</td>
+				<td th:text="${contato.email}">fulano@detal.com</td>
+				<td th:text="${contato.telefone}">1111-1111</td>
+			</tr>			
+		</tbody>
+	</table>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
